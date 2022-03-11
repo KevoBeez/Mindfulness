@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <video
+    id="my-video"
+    class="video-js vjs-theme-fantasy"
+    controls
+    preload="auto"
+ 
+    poster="/images/OCEANO.jpg"
+    data-setup="{}"
+    >
+    
+    <source src="./assets/video2.mp4" type="video/mp4" />
+    
+
+  </video>
+
+  <video
+  id="my-videos"
+  class="video-js vjs-theme-fantasy"
+  controls
+  preload="auto"
+
+  poster="/mp4/forest_thumbnail.jpg"
+  data-setup="{}"
+  >
+  <source src="./assets/video1.mp4" type="video/mp4" />
+ 
+
+</video>
+
+
+	<div class="container">
+
+		<!-- <div class="item footer">sounds</div> -->  
+
+    <button id="gc" type="button" onclick="play('sound-oiseaux')">Sound 1</button>
+
+    <button id="gcs" type="button" onclick="play('sound-chat')">Sound 2</button>
+
+ 
+	<audio id="sound-oiseaux" src="./audio/sound1.mp3"
+    autostart="false"></audio>
+
+  <audio id="sound-chat" src="./audio/sound2.mp3" 
+    autostart="false"></audio>
+
+
+
+
+    
+
+<script src="./js/main.js"></script> 
+
+</body>
+
+</html>
